@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+        
+        <main>
+            <form class="table">
+                <label for="topic">Topic:</label>
+                <input type="text" id="topic" name="topic"><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="details">Details:</label>
+                <textarea id="details" name="details" rows="4" cols="20"></textarea><br><br>
+                <label for="place">Where:</label>
+                <input type="text" id="place" name="place"><br><br>
+                <label for="date">When:</label>
+                <input type="datetime-local" id="date" name="date"><br><br>
+                <button type ="submit" onclick="window.location.href='connection'">Create Connection</button>
+            </form> 
+        </main>
+            
+<%- include('partials/footer.ejs') %>

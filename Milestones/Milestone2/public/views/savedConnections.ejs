@@ -1,0 +1,36 @@
+<%- include('partials/header.ejs') %>
+		
+		<main>
+		<table class="table">
+			<tr> 
+				<th>Topic</th>
+				<th>Domain</th>
+				<th>Going?</th>
+				<th>Action</th>
+				
+			</tr>
+			<tr> 
+				<td>Education</td>
+				<td>Maths</td>
+				<td>Yes</td>
+				<td><button type="submit" onclick="window.location.href='connections?conn_id=1'">Update</button>&emsp;
+				<button type="submit" onclick="window.location.href='savedConnections'">Delete</button></td>
+			</tr>
+			<tr> 
+				<td>Education</td>
+				<td>Science</td>
+				<td>Yes</td>
+				<td><button type="submit" onclick="window.location.href='connections?conn_id=2'">Update</button>&emsp;
+					<button type="submit" onclick="window.location.href='savedConnections'">Delete</button></td>
+			</tr>
+			<tr> 
+				<td>Education</td>
+				<td>Accounting</td>
+				<td>No</td>
+				<td><button type="submit" onclick="window.location.href='connections?conn_id=3'">Update</button>&emsp;
+					<button type="submit" onclick="window.location.href='savedConnections'">Delete</button></td>
+			</tr>
+		</table>
+		</main>
+		
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs') %>
+        
+        <main>
+            <h2>Please enter your username and password to login!</h2>
+            <form class="table" method="POST" action="/login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password"><br><br>
+                <button type ="submit" >Login</button>
+            </form> 
+        </main>
+            
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../assets/stylesheets/style.css">
+<title>Course Details</title>
+</head>
+<body>
+  <table>
+    <tr>
+        <th>Course Number</th>
+        <th>Title</th>
+        <th>Term</th>
+        <th>Instructor</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Email</th>
+    </tr>
+    <% course.forEach(function(course){ %>
+    <tr>
+        <td><%= course.code %></td>
+        <td><%= course.title %></td>
+        <td><%= course.term %></td>
+        <td><%= course.instructor %></td>
+        <td><%= course.start %></td>
+        <td><%= course.end %></td>
+        <td><%= course.email %></td>
+    </tr>
+<% }) %>
+</table>
+</body>
+</html>

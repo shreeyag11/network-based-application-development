@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+    </title>
+    <link href="/assets/stylesheets/style.css" rel="stylesheet" type="text/css"/>
+</head>
+    <body>
+        <div>
+            <p>Enter Details: </p>
+            <form id ="contact-form" method="POST" action="/coursedetails">
+                <label for="courseID"> courseID </label>
+                <input type="text" name="courseID"><br><br>
+                <label for="title"> Title</label>
+                <input type="text" name="title"><br><br>
+                <label for="term"> Term</label>
+                <input type="text" name="term" ><br><br>
+                <label for="instructor"> Instructor</label>
+                <input type="text" name="instructor"><br><br>
+                <input type="submit" value="submit" />
+            </form>
+            <p>The number of post request till now is: <%= count %></p>
+        </div>
+    </body>
+</html>
+
+	
+	

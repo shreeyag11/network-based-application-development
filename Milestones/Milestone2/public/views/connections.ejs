@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+		
+		<main id="connections">
+				<% topic.forEach(function(cur_topic){ %>
+				<h2><%=cur_topic%></h2>
+					<ul>
+					<% connection.forEach(function(conn){
+						if (conn.conn_topic==cur_topic){%>
+							<li><a href="/connection?conn_id=<%=conn.conn_id%>"><%=conn.conn_name%></a></li>
+							<%}});%>
+						</ul>
+						<%})%>
+		  </main>
+
+		<br><br><br><br>		
+<%- include('partials/footer.ejs') %>

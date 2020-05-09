@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+    </title>
+    <link href="/assets/stylesheets/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <table id="courses">
+        
+            <tr>
+                <th>Course Number</th>
+                <th>Title</th>
+                <th>Term</th>
+                <th>Instructor</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td><%= course.courseID %></td>
+                <td><%= course.title %></td>
+                <td><%= course.term %></td>
+                <td><%= course.instructor %></td>
+                <td><%= course.start %></td>
+                <td><%= course.end %></td>
+                <td><%= course.email %></td>
+            </tr>
+            <tr>   
+                <td colspan = "7" class="image"><%- include ('image.ejs') %></td>         
+            </tr>
+        
+    </table>
+</body>
+</html>

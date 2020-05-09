@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') %>
+
+		<main>
+			<h3><%= data.connection.conn_name %></h3>
+				<div class="display"><div class="logo"><img src="/assets/images/other2.jpg" alt="" width="100" height="100"></div>
+					<div class="details"><p><b>Hosted by: </b><%= data.connection.conn_host %><br>
+						<b>Date and Time: </b><%= data.connection.conn_date %><br>
+						<b>Location: </b><%= data.connection.conn_location %><br></div>
+					<div class="buttons_of_interest"><p><b>Are you going?</b></p>
+						<form method="GET">
+							<input hidden name="id" value="<%= data.connection.conn_id %>">
+							<button type="submit" formaction="/myconnections/rsvp" value="Yes" name="rsvp">Yes</button>
+						<button type="submit" formaction="/myconnections/rsvp" name="rsvp" value="No">No</button>
+						<button type="submit" formaction="/myconnections/rsvp" name="rsvp" value="Maybe">Maybe</button>
+					</div>
+				</div>
+				<br>
+					<h4><b>Details:</b></h4> <%= data.connection.conn_details %>
+				</main>
+		
+<%- include('partials/footer.ejs') %>

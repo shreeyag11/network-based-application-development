@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+		
+		<main id="connections">
+				<% for(var i=0; i < data.topics.length; i++){ %>
+				<h2><%= data.topics[i] %></h2>
+					<ul>
+						<% for(var j=0; j < data.connections.length; j++){
+                            if(data.connections[j].conn_topic === data.topics[i] ){%>
+							<li><a href="connection/<%= data.connections[j].conn_id%>"><%= data.connections[j].conn_name %></a></li>
+							<% } 
+						}%>						
+					</ul>
+						<% } %>
+		</main>
+
+		<br><br><br><br>		
+<%- include('partials/footer.ejs') %>

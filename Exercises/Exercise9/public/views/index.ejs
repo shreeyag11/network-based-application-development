@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+    </title>
+    <link href="/assets/stylesheets/style.css" rel="stylesheet" type="text/css"/>
+</head>
+    <body>
+        <div>
+            <form id="contact-form" method="POST" action="/course">
+                        <a href="courses">Click to see all the courses</a>
+                    <br>
+                        <label>To search a Course enter the code</label>
+                        <input type="text" name="searchbox">
+                        <input type="submit" value="search"/>
+           </form>
+             
+
+            <p>Update/Insert Course Details</p>
+            <%if(errors.length>0){ %>
+                <%   for(var i=0;i< errors.length ; i++) {%>
+                       <label><%= errors[i].msg %><br></label>
+                   <%}%>
+               <%}%>  
+            <form id ="contact-form" method="POST" action="/coursedetails">
+                <label for="courseID"> courseID </label>
+                <input type="text" name="courseID" required><br><br>
+                <label for="title"> Title</label>
+                <input type="text" name="title" required><br><br>
+                <label for="term"> Term</label>
+                <input type="text" name="term" required><br><br>
+                <label for="instructor"> Instructor</label>
+                <input type="text" name="instructor" required><br><br>
+                <label for="start"> Start Time</label>
+                <input type="time" name="start" required><br><br>
+                <label for="end"> End Time</label>
+                <input type="time" name="end" required><br><br>
+                <label for="email"> Email ID:</label>
+                <input type="email" name="email" required><br><br>
+                <input type="submit" value="submit" />
+            </form>
+            <p>The number of post request till now is: <%= count %></p>
+        </div>
+    </body>
+</html>
+
+	
+	
