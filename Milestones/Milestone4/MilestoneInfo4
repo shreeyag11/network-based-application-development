@@ -1,0 +1,5 @@
+#Database Integration with MongoDB
+
+Create a database in MongoDB
+Create Collections for the static data such as Connections and Users
+Update the application to fetch the data from MongoDB

@@ -1,0 +1,11 @@
+#MVC Application with Routes and Views
+
+Convert all the html pages to ejs template
+Create header and footer.. Add the header and footer to all the pages
+Add adout.ejs and contact.ejs pages
+Add template for creating new connection
+Create Models for connection with specific properties
+Create utility function for persistant data
+Create Routes for Business Logic (Controller)
+Update EJS Template Views to Include Dynamic Content From Data Object
+Update Form / Button Actions and Links in the Site to Dispatch Correctly

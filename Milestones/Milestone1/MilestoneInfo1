@@ -1,0 +1,17 @@
+#HTML Web site prototyping
+
+Created following HTML pages and designed it using CSS.
+Home page:
+    Conatins logo, placeholder for login name, login, signup links, start a new connection link
+Connections Page:
+    Contains different categories of connections
+    Multiple connections per category
+Connection Detail:
+    Picture of host user
+    Connection highlights, including category/topic, host user name, time / date, and location 
+    Connection detail description 
+    Buttons to add the Connection to a saved connections list
+Saved Connections:
+    Main content container should provide a table structure listing representative connections saved to user profile
+    “Update” button action should link to the “connection” page 
+    “Delete” button should link to back to the “saved connections” page 

@@ -1,0 +1,6 @@
+#Managing Profile using Sessions
+
+Add New EJS Site Pages for Login
+Create New Objects for Business Objects (Model) - User Model and UserConnection Model
+Create a utility class/module to manage a user's profile
+Create Routes for Business Logic (Controller)

@@ -1,0 +1,8 @@
+#Secure NodeJS Application
+
+Add Logic to Handle User Login:
+    When the user clicks the sign in button this should send a request to verify that username and password submitted belong to an already registered user.
+    If the user credentials do not validate, the login view should be displayed showing an error message. (e.g. Either username or password are incorrect. Please try again.)
+    If the user credentials are verified display the profile view.
+Make use of the express-validator package to validate all input values read into the application
+Update your application to escape dynamic output displayed in all views
