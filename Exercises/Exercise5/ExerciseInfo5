@@ -1,0 +1,3 @@
+#Using Middleware
+
+add a middleware function to the /coursedetails route handler stack keeps track of the number of times the course information form was submitted (POST request using the form on index.html) since the application started running. Print to the console a message displaying this number every time this function is invoked.

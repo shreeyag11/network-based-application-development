@@ -1,0 +1,6 @@
+#Using Sessions
+
+Update the application to render this new view for the / URL pattern
+Update the application to handle the POST request in a similar way as the GET route handling was defined for /coursedetails.
+Update this newly added route definition to store the course data in the session as a course object (created using the course.js function/class) under the attribute/property name "theCourse" 
+Change the GET route handling to check for if a course object has been stored in the session, if a course's information exists under the property(attribute) named "theCourse",  then route to the details.ejs view using the value for this attribute as the course data to be displayed. If no course information is stored in the session or was sent with the request, route to index.html view. 

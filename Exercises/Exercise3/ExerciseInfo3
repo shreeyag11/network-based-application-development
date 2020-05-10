@@ -1,0 +1,23 @@
+#Routes and Dynamic Content
+
+Create and export a Course class (Course.js)  in the models directory that represents a course model with the following properties:
+CourseID
+Title
+Term
+Instructor
+
+if course data is available display a table that showing a course details and displays a course number, title, term and instructor. 
+if no course data is available display a default message (e.g, "No course details available!")
+
+courseDetails.js file in the routes directory
+loads the express module and uses it to get an express.Router object. 
+specifies the route handlers for the application route "/coursedetails"
+the root for this route (router.get('/',...))
+should check for request parameters
+if no parameters are passed as a part of the request the response should be rendered by details.ejs displaying a default message.
+be simple text indicating no information available or requested. (query or param)
+if course info is sent as request parameters (for example using the url /coursedetails?courseID=1212&title=CS1&term=spring2020&instructor=najjar) the response should be rendered by details.ejs displaying the course details.
+note:  you must create a course model (object) that is defined in course.js and send that object to the view for display
+exports the router from the module.
+
+import and use the express.static middleware to get Express to serve all the static files in the  assets directory in the project root.

@@ -1,0 +1,7 @@
+#Integrating Persistant Data Storage
+
+Continuing from Exercise 5..
+Removing the static data and creating the database on MongoDB
+Retriving the data from MongoDB
+Add a search box (input field) that will accept a course code as input and results in displaying a table listing all courses in the database that match the string provided in the search box.
+Update the application so when a new form is submitted it checks the list of stored courses in the database and if there is a matching course (use code, instructor and term) to check for a match) update the record with the newly submitted data (even if there is no change in the data) and if there is no matching course a new entry will be added to the database with the information submitted.

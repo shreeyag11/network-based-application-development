@@ -1,0 +1,4 @@
+#Serving Files
+
+reads from a file called "viewTextInBrowser.txt" located in a sub folder/directory called "views"
+creates a server listening for HTTP requests on port 8080 (server.listen(8080, "127.0.0.1") and responds by sending the information (student name and school ID) that was read from the file. 

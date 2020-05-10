@@ -1,0 +1,6 @@
+#Serving HTML pages
+
+creates a server listening for HTTP requests on port 8080
+responds by sending contact.html file located in the folder/directory called "views" to requests sent to the server for /contact  (http://127.0.0.1/contact)
+responds by sending about.html file located in the folder/directory called "views" to requests sent to the server  for /about (http://127.0.0.1/about)
+ 
